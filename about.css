@@ -1,0 +1,54 @@
+.about-Container{
+    margin:90px 50px;
+    height: 600px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    grid-template-areas:
+                        "i i i i . . a a a a a a"
+                        "i i i i . . a a a a a a"
+                        "i i i i . . a a a a a a"
+                        ". . . . . . . . . . . ."
+                        "b b b b . . h h h h h h"
+                        "b b b b . . h h h h h h"
+                        "b b b b . . h h h h h h"
+                        "b b b b . . h h h h h h"
+                        "b b b b . . h h h h h h"
+                        "b b b b . . h h h h h h"
+                        "b b b b . . h h h h h h"
+                        "b b b b . . h h h h h h"
+     ;
+}
+#intro{
+    grid-area: i;
+}
+#bg-HydraPack{
+    grid-area: b;
+}
+#bg-HydraPack>img{
+    width: 100%;
+}
+#aboutPara{
+    grid-area: a;
+}
+#about-Hydra{
+    grid-area: h;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 1rem;
+}
+#about-Hydra>h2{
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#about-Hydra>h2+p{
+    font-weight: 200;
+    font-size: 1.5rem;
+    word-spacing: 0.5rem;
+}
+#about-Hydra>button{
+    position: absolute;
+    bottom: 0;
+}
