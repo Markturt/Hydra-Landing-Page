@@ -1,0 +1,70 @@
+.serviceContainer{
+    margin:90px 48px;
+    display: grid;
+    height: 39rem;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 
+                "w w w w w w r r r r r r"
+                "w w w w w w r r r r r r"
+                "s s s e e e a a a o o o"
+                "s s s e e e a a a o o o"
+                "s s s e e e a a a o o o"
+                "s s s e e e a a a o o o"
+    ;
+    color: white;
+}
+#why{
+    grid-area: w;
+}
+#Reasons{
+    grid-area: r;
+}
+#Simulation{
+    grid-area: s;
+
+}
+#Education{
+    grid-area: e;
+}
+#Self-care{
+    grid-area: a;
+}
+#Outdoor{
+    grid-area: o;
+}
+.reasonGrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 40px;
+    background-image: radial-gradient(#433D60,#211E2E);
+    margin-right:0.4rem ;
+    padding: 1rem;
+}
+.reasonGrid .imgCont{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgba(31, 29, 29, 0.815);
+}
+.reasonGrid img{
+    width: 95%;
+}
+.reasonGrid h2{
+    border-bottom: 2px solid #C0B7E8;
+}
+.reasonGrid>p{
+    text-align: center;
+}
+.reasonGrid>button{
+    width: 154px;
+    height:48px;
+    padding: .5rem;
+    border-radius: 40px;
+    color: #343045;
+    background-image: linear-gradient(rgba(129, 118, 175, 1),rgba(192, 183, 232, 1));
+}
