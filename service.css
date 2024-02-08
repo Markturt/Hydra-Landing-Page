@@ -189,4 +189,7 @@
 }
 #item04{
     grid-area: r;
-} 
+}
+.optWrapper{
+    color: white;
+}
