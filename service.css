@@ -1,3 +1,6 @@
+*{
+    color: white;
+}
 .serviceContainer{
     margin:90px 48px;
     display: grid;
@@ -19,6 +22,8 @@
 }
 #Reasons{
     grid-area: r;
+    align-self: center;
+    justify-self: center;
 }
 #Simulation{
     grid-area: s;
@@ -68,3 +73,120 @@
     color: #343045;
     background-image: linear-gradient(rgba(129, 118, 175, 1),rgba(192, 183, 232, 1));
 }
+
+.techContainer{
+    margin:90px 48px;
+    color: white;
+}
+#tInfo{
+    border-radius: 120px; 
+    text-align: center;
+    width: 100%;
+    padding: 3rem;
+    background-image: url("./images/pexels-rodnae-productions-8097332\ 1.png");
+    background-position: right top ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+#v{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-image: linear-gradient(rgba(129, 118, 175, 1),rgba(192, 183, 232, 1));
+    position: absolute;
+    bottom: -30px;
+    right: 50%;
+}
+#hydraTech{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+}
+#unReal{
+    height: 174px;
+}#unity{
+    height: 252px;
+}
+#oculus{
+    height: 263px;
+}
+#vive{
+    height: 282px;
+}
+.processContainer{
+    margin: 90px 48px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 
+                "h h h h h h p p p p p p"
+                "h h h h h h p p p p p p"
+                "q q q w w w e e e r r r"
+                "q q q w w w e e e r r r"
+                "q q q w w w e e e r r r"
+                "q q q w w w e e e r r r"
+                ;
+    height: 37rem;
+    color: white;
+    
+    align-items: center;
+}
+#howBuild{
+   grid-area: h;
+}
+#proDesc{
+    grid-area: p;
+    align-self: center;
+}
+.itemWraper{
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.Item{
+    width: 198px;
+    height: 198px;
+    background-color: #211e2e48;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+}
+.Item>span{
+    text-align: center;
+    display: inline-block;
+    width: 159px;
+    height: 159px;
+    font-size: 70px;
+    line-height: 159px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 50%;
+    background-image: linear-gradient(rgba(129, 118, 175, 1),rgba(192, 183, 232, 1));
+}
+
+.itemDesc{
+    display: flex;
+   justify-content: space-evenly;
+}
+.itemDesc>span{
+    align-self: center;
+    font-weight: 700;
+}
+#item01{
+    grid-area: q;
+}
+#item02{
+    grid-area: w;
+}
+#item03{
+    grid-area: e;
+}
+#item04{
+    grid-area: r;
+} 

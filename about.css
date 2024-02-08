@@ -42,6 +42,8 @@
 }
 #aboutPara{
     grid-area: a;
+    justify-self: center;
+    align-self: center;
 }
 #about-Hydra{
     grid-area: h;
