@@ -14,10 +14,30 @@ body>*{
 a{
     color: white;
 }
-main>section{
-    margin-bottom: 4rem;
-    border: 2px solid palegreen;
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;       /* all section of the page has atleast one h2 heading so i had to generalise the style for the heading (utility for heading)*/
 }
+main>section{
+    margin-bottom: 4rem;     
+}
+main>section>div:nth-of-type(1){
+    display: flex;
+    gap: 1rem;
+}
+.btn{
+    padding: .5rem 1.5rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 11px;
+    background-image: linear-gradient(#8176AF,#C0B7E8);
+}
+.h-span{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+/* Styling for the Hero Section */
 .hero{
     display: flex;
     flex-direction: column;
@@ -66,6 +86,9 @@ main>section{
     flex-direction: row-reverse;
     justify-content: space-between;
 }
+.hero h2{
+    font-size: 2rem;
+}
 .Hero-img-Wrapper{
     display: flex;
     justify-content: flex-end;
@@ -79,22 +102,17 @@ main>section{
     flex-direction: column;
     justify-content: space-evenly;
     max-width: 23rem;
-    line-height: 1.5;
 }
 .Hero-img-Wrapper +div>div{
     display: flex;
 }
 .Hero-img-Wrapper + div button{
-    padding: .5rem 1.5rem;
-    border-radius: 1rem;
-    font-weight: 700;
-    font-size: 11px;
-    background-image: linear-gradient(#8176AF,#C0B7E8);
     align-self: center;
 }
-.hero h2{
-    font-size: 2rem;
-    font-weight: 700;
+.hero strong{
+    background: -webkit-linear-gradient(#8176af,#c0b7e8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .hero .contact{
     display: flex;
@@ -117,4 +135,66 @@ main>section{
 }
 .contact-item small{
     font-size: 10px;
+}
+
+
+/* Styling for the About Section */
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-between ;
+    min-height: 80vh;
+}
+.about>*{
+    flex-basis: 50%;
+}
+.about>div:nth-of-type(1){
+   gap: 0;
+}
+.about>div:nth-of-type(2){
+    align-self: flex-end;
+}
+.about>div:nth-of-type(2) img{
+    width: 70%;
+}
+.about>div:nth-of-type(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.about button{
+    align-self: flex-start;
+}
+
+
+/* Styling The Service Section */
+
+.service{
+    display: flex;
+    flex-wrap: wrap;
+    height: 90vh;
+}
+.service>div:nth-of-type(1),p{
+    flex-basis: 50%;
+}
+.reasons{
+ display: flex;
+ gap: 1rem;
+}
+.reason{
+    background-image: radial-gradient(#433D60,#211E2E);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem;
+} 
+.reason h3{
+    font-weight: 700;
+}
+.reason button{
+    padding: 1rem 3rem;
+    border-radius: 1.5rem;
 }
