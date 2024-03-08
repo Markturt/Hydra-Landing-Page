@@ -175,7 +175,7 @@ main>section>div:nth-of-type(1){
     flex-wrap: wrap;
     height: 90vh;
 }
-.service>div:nth-of-type(1),p{
+.service>div:nth-of-type(1), .service>p{
     flex-basis: 50%;
 }
 .reasons{
@@ -197,4 +197,92 @@ main>section>div:nth-of-type(1){
 .reason button{
     padding: 1rem 3rem;
     border-radius: 1.5rem;
+}
+
+
+/* Styling for the tech Section */
+
+.tech>header{
+    position: relative;
+}
+.tech>header>div:nth-of-type(1){
+    border-radius: 9rem;
+    overflow: hidden;
+    max-height: 300px;
+}
+.tech >header>img{
+    /* width: 100%; */
+    object-fit: cover;
+}
+.tech>header>h2{
+    position: absolute;
+    top: 7rem;
+    right:30rem;
+}
+.tech>header>div:nth-of-type(2){
+    position: absolute;
+    top: 10rem;
+    right: 35rem;
+}
+.tech>header>span{
+    position: absolute;
+    bottom: -16px;
+    right: 50%;
+    font-size: 1.5rem;
+    background-image: linear-gradient(#8176AF,#C0B7E8);
+    width: 3rem;
+    height: 3rem;
+    border-radius:50%;
+    text-align: center;
+    line-height: 3rem;
+    color: gray;
+}
+.tech-Wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Styling for the process Section */
+ 
+.process{
+    display: flex;
+    flex-wrap: wrap;
+    height: 28rem;
+    position: relative;
+}
+.process>div:nth-of-type(1), .process>p{
+    flex-basis: 50%;
+}
+.Hydra-Method{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+}
+.methods{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.method{
+    display: flex;
+}
+.method>ul{
+    align-self: center;
+    font-weight: 700;
+}
+.Item{
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    line-height: 10rem;
+    border-radius: 50%;
+    font-size: 3rem;
+    font-weight: 700;
+    background-image: linear-gradient(#8176AF,#C0B7E8);
+    color: #343045;
+    box-shadow: 2px 2px  5px 4px #0b0a0e,-2px  2px 5px 4px #0b0a0e;
 }
